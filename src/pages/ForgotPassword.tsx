@@ -46,11 +46,9 @@ const ForgotPassword = () => {
   if (isSubmitted) {
     return (
       <div className="min-h-screen bg-white flex flex-col">
-        {/* Header con botón de regreso */}
+        {/* Header */}
         <div className="p-6">
-          <Link to="/login">
-            <ArrowLeft className="h-6 w-6 text-gray-600" />
-          </Link>
+          <div className="h-6 w-6"></div>
         </div>
         
         {/* Contenido principal */}
@@ -77,9 +75,9 @@ const ForgotPassword = () => {
             
             <Button 
               className="w-full bg-black text-white hover:bg-gray-800 transition-colors py-3 text-lg font-medium rounded-lg"
-              onClick={() => navigate('/login')}
+              onClick={() => navigate('/')}
             >
-              Volver al Login
+              Volver al Inicio
             </Button>
           </div>
         </div>
@@ -117,11 +115,9 @@ const ForgotPassword = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      {/* Header con botón de regreso */}
+      {/* Header */}
       <div className="p-6">
-        <Link to="/login">
-          <ArrowLeft className="h-6 w-6 text-gray-600" />
-        </Link>
+        <div className="h-6 w-6"></div>
       </div>
       
       {/* Contenido principal */}
@@ -161,21 +157,10 @@ const ForgotPassword = () => {
             </div>
 
             <div className="text-center pt-4 space-y-2">
-              <div className="text-gray-500">
-                <Link to="/login" className="hover:text-gray-700">
-                  Volver
-                </Link>
-              </div>
               <div className="text-gray-600">
                 ¿Ya tienes el token de recuperación?{" "}
                 <Link to="/reset-password" className="text-black font-medium hover:underline">
                   Cambiar contraseña
-                </Link>
-              </div>
-              <div className="text-gray-600">
-                ¿No tienes cuenta?{" "}
-                <Link to="/register-intro" className="text-black font-medium hover:underline">
-                  Regístrate
                 </Link>
               </div>
             </div>
