@@ -89,11 +89,9 @@ const ResetPassword = () => {
   if (isSuccess) {
     return (
       <div className="min-h-screen bg-white flex flex-col">
-        {/* Header con botón de regreso */}
+        {/* Header */}
         <div className="p-6">
-          <Link to="/login">
-            <ArrowLeft className="h-6 w-6 text-gray-600" />
-          </Link>
+          <div className="h-6 w-6"></div>
         </div>
         
         {/* Contenido principal */}
@@ -107,17 +105,10 @@ const ResetPassword = () => {
             </div>
             
             <div className="text-center space-y-4 mb-8">
-              <p className="text-gray-600">
-                Ya puedes iniciar sesión con tu nueva contraseña.
+              <p className="text-gray-600 text-lg">
+                Por favor, vuelva a intentar el ingreso en la app con la nueva contraseña gestionada.
               </p>
             </div>
-            
-            <Button 
-              className="w-full bg-black text-white hover:bg-gray-800 transition-colors py-3 text-lg font-medium rounded-lg"
-              onClick={() => navigate('/login')}
-            >
-              Ir al Login
-            </Button>
           </div>
         </div>
 
@@ -288,12 +279,6 @@ const ResetPassword = () => {
               <div className="text-gray-500">
                 <Link to="/forgot-password" className="hover:text-gray-700">
                   Volver a recuperación
-                </Link>
-              </div>
-              <div className="text-gray-600">
-                ¿Recordaste tu contraseña?{" "}
-                <Link to="/login" className="text-black font-medium hover:underline">
-                  Iniciar sesión
                 </Link>
               </div>
             </div>
