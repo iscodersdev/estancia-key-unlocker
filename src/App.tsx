@@ -21,7 +21,8 @@ const App = () => (
             <Route path="/" element={<ForgotPassword />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/login" element={<ForgotPassword />} />
+            <Route path="*" element={<ForgotPassword />} />
           </Routes>
         </div>
       </TooltipProvider>
